@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ログアウトボタン */
+.logout {
+    text-align: left;
+    margin: 2vw;
+}
+
+.logout button {
+    cursor: pointer;
+    padding: 0.6em 1.2em;
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+}
+
+/* メインタイトル */
+.main {
+    margin: 8vh 0;
+}
+
+.main h1 {
+    font-size: clamp(1.4rem, 4vw, 2.5rem);
+    line-height: 1.6;
+}
+
+/* メニュー全体 */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+.menu .up {
+    display: flex;
+    gap: 4vw;
+}
+
+/* 共通ボタン */
+.menu button {
+    padding: 1em 2em;
+    font-size: clamp(1rem, 3vw, 1.6rem);
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 8px; /* タップしやすいように角丸 */
+}
+
+/* ===== スマホ用：PCの横並びを維持して縮小表示 ===== */
+@media (max-width: 600px) {
+    body {
+        transform: scale(1.2);          /* 全体を70%に縮小 */
+        transform-origin: top left;     /* 左上基準 */
+        width: 83.3%;                /* 横幅補正 (100 ÷ 0.7) */
+    }
+
+    .menu .up {
+        flex-direction: row;           /* 横並び維持 */
+        gap: 4vw;                      /* PCと同じ間隔 */
+        justify-content: center;       /* 中央寄せ */
+    }
+
+    .menu button {
+        width: 90%;                   /* 自動幅で横並び崩さない */
+        padding: 1em 2em;              /* PCと同じパディング */
+        font-size: clamp(1rem, 3vw, 1.6rem); /* 文字サイズ調整 */
+    }
+
+    .logout button {
+        padding: 0.6em 1.2em;          /* ログアウトボタンもPC準拠 */
+        font-size: clamp(0.7rem, 1.5vw, 1rem);
+    }
+}
+
+
+/* ===== PC用調整 ===== */
+@media (min-width: 1024px) {
+    .menu button {
+        min-width: 250px;
+        padding: 1em 2.5em;
+        font-size: 1.5rem;
+    }
+}
