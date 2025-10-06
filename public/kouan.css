@@ -1,0 +1,89 @@
+/* 全体レイアウト */
+body {
+    font-family: "Arial", "Hiragino Kaku Gothic ProN", sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px; /* スマホサイズ基準 */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .content-wrapper {
+    margin: 15px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .content-wrapper input {
+    display: block;
+    width: 90%;
+    margin: 8px auto;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  
+  /* 戻るボタン（左上配置） */
+  .back {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .back-btn {
+    padding: 8px 16px;
+    border: 2px solid #333;
+    border-radius: 20px 0 0 20px; /* 左矢印っぽくする */
+    background: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  /* タイトル */
+  .title h2 {
+    margin: 10px 0 30px;
+  }
+  
+  /* ボタン共通 */
+  button {
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #fff;
+    border: 2px solid #333;
+    cursor: pointer;
+    display: block;
+  }
+  
+  /* 四角ボタン */
+  button.rect {
+    border-radius: 6px;
+    width: 60%;
+  }
+  
+  /* 楕円ボタン */
+  button.oval {
+    border-radius: 50px;
+    width: 40%;
+  }
+  
+  /* 確定ボタン */
+  .confirm {
+    margin-top: auto; /* 下寄せ */
+    padding-top: 20px;
+  }
+  
