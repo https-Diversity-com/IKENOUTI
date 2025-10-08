@@ -1,0 +1,98 @@
+body {
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 30px 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+.register-container h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.register-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.password-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.password-container input {
+    width: 90%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    color: #666;
+}
+
+.toggle-password:hover {
+    color: #333;
+}
+
+.register-container button {
+    padding: 10px 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.register-container button:hover {
+    background: #eee;
+}
+
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #888;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.back-button:hover {
+    background: #eee;
+}
+
+.error-message {
+    color: #d32f2f;
+    background-color: #ffebee;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none;
+}

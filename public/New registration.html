@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規登録</title>
+    <link rel="stylesheet" href="New registration.css">
+</head>
+<body>
+    <main class="register-container">
+
+        <button type="button" class="back-button" onclick="window.location.href='Login.html'">戻る</button>
+
+        <h1>新規登録</h1>
+
+        <form id="registerForm">
+
+            <p><input type="text" id="newUsername" name="username" placeholder="ユーザー名を入力"></p>
+            
+            <p class="password-container">
+                <input type="password" id="newPassword" name="password" placeholder="パスワードを入力">
+                <span class="toggle-password" id="togglePassword">表示</span>
+            </p>
+
+            <p class="password-container">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="パスワード確認">
+                <span class="toggle-password" id="toggleConfirmPassword">表示</span>
+            </p>
+
+            <div class="error-message" id="errorMessage"></div>
+
+            <p><button type="submit">決定ボタン</button></p>
+
+        </form>
+
+    </main>
+
+    <script src="New registration.js"></script>
+</body>
+</html>
