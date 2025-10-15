@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商品一覧</title>
+  <link rel="stylesheet" href="genre.css" />
+</head>
+<body>
+    <header>
+        <button class="back-btn" onclick="location.href='home.html'">← 戻る</button>
+        <h1>商品一覧</h1>
+    </header>
+      
+
+  <main>
+    <div class="table-container">
+      <table class="item-table">
+        <thead>
+          <tr>
+            <th>日付</th>
+            <th>商品名</th>
+            <th>価格</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JSで自動生成 -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="button-container">
+      <button class="page-btn prev">← 前へ</button>
+      <button class="add-btn">＋ 商品追加</button>
+      <button class="page-btn next">次へ →</button>
+    </div>
+  </main>
+
+  <!-- 削除確認モーダル -->
+  <div class="confirm-overlay">
+    <div class="confirm-box">
+      <p id="confirm-message">削除しますか？</p>
+      <div class="confirm-buttons">
+        <button id="confirm-yes">はい</button>
+        <button id="confirm-no">いいえ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 追加フォームモーダル -->
+  <div class="add-overlay">
+    <div class="add-box">
+      <h3>商品を追加</h3>
+      <label>品名：</label>
+      <input type="text" id="item-name" placeholder="例：トマト"><br>
+      <label>価格：</label>
+      <input type="number" id="item-price" placeholder="例：200"><br>
+      <div class="add-buttons">
+        <button id="add-submit">追加</button>
+        <button id="add-cancel">キャンセル</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="genre.js"></script>
+</body>
+</html>
