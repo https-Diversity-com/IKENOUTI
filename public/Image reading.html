@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像選択</title>
+    <link rel="stylesheet" href="Image reading.css">
+</head>
+<body>
+    <main class="photo-container">
+        
+        <button type="button" class="back-button" id="backButton">戻る</button>
+        
+        <h1>画像選択</h1>
+        
+        <div class="photo-display" id="photoDisplay">
+            <div class="placeholder">選んだ写真を表示</div>
+        </div>
+        
+        <div class="button-group">
+            <p><button type="button" class="action-button" id="browseButton">参照</button></p>
+            <p><button type="button" class="action-button" id="addButton" disabled>追加</button></p>
+        </div>
+
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+
+        <div class="image-list" id="imageList" style="display: none;"></div>
+        
+    </main>
+
+    <script src="Image reading.js"></script>
+</body>
+</html>
