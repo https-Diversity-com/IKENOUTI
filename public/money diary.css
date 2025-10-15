@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Meiryo', sans-serif;
+    background-color: #f5f5f5;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    border: 1px solid #ccc;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.back-button {
+    padding: 8px 16px;
+    border: 1px solid #333;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.back-button:hover {
+    background-color: #f0f0f0;
+}
+
+.back-button:active {
+    background-color: #e0e0e0;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.category-item {
+    border: 1px solid #333;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.category-item:hover {
+    background-color: #f0f0f0;
+}
+
+.category-item:active {
+    background-color: #e0e0e0;
+}
+
+.total-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.total-box {
+    border: 1px solid #333;
+    padding: 20px 60px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.total-box:hover {
+    background-color: #f0f0f0;
+}
+
+.total-box:active {
+    background-color: #e0e0e0;
+}
