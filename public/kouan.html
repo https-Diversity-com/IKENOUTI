@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>料理考案</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>料理考案</title>
+  <link rel="stylesheet" href="kouan.css">
 </head>
 <body>
+  <div class="container">
     <div class="back">
-        <button>戻る</button>
+      <button class="back-btn">戻る</button>
     </div>
 
     <div class="title">
-        <h2>料理考案</h2>
+      <h2>料理考案</h2>
     </div>
 
-    <div class="addBtn">
-        <button>追加</button>
+    <!-- 追加ボタン -->
+    <div class="buttons">
+      <button id="addBtn" class="rect">追加</button>
     </div>
+
+    <!-- 考案内容が入る場所 -->
+    <div id="contentArea"></div>
+
+    <!-- 確定ボタン -->
+    <div class="confirm">
+      <button id="confirmBtn" class="rect">確定</button>
+    </div>
+  </div>
+
+  <script src="gohome.js"></script>
+  <script src="kouan.js"></script>
 </body>
 </html>
